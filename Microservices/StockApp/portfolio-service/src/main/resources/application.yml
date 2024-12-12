@@ -1,0 +1,52 @@
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost5432/ust_db
+    username: postgres
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+resilience4j:
+  retry:
+    metrics:
+      enabled: true
+    instances:
+      retry-stocks-fetch:
+        max-attempts: 5
+        wait-duration: 2s
+
+  circuitbreaker:
+    instances:
+      stocks-service-cb:
+        registerHealthIndicator: true
+        eventConsumerBufferSize: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        failureRateThreshold: 50
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 1
+        slidingWindowSize: 10
+        waitDurationInOpenState: 5s
+        slidingWindowType: COUNT_BASED
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    httptrace:
+      enabled: true

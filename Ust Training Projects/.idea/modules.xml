@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java Coding Practice/src/com/ust/training/Collections/Collections.iml" filepath="$PROJECT_DIR$/Java Coding Practice/src/com/ust/training/Collections/Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Coding Practice/Java Coding Practice.iml" filepath="$PROJECT_DIR$/Java Coding Practice/Java Coding Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ust Training Projects.iml" filepath="$PROJECT_DIR$/Ust Training Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Coding Practice/src/com/ust/training/Collections/listset/listset.iml" filepath="$PROJECT_DIR$/Java Coding Practice/src/com/ust/training/Collections/listset/listset.iml" />
+    </modules>
+  </component>
+</project>
