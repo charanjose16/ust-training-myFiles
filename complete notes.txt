@@ -1,0 +1,2068 @@
+------------------------
+Day 1 - Date: 19/08/2024
+------------------------
+
+What are we going to learn?
+
+Java SE (Standard Edition) - local server
+Java EE (Enterprise Edition) - external servers
+Database
+Spring Framework
+Microservices
+Docker
+AWS
+Frontend - React / Angular
+
+
+Learning - Agile
+
+SDLC - SD Life Cycle
+
+Agile -> Repetitive, Flexible
+|
+Daily Standup -> 3Q
+
+1Q. What did we do yesterday?
+2Q. What are we going to do today?
+3Q. Any Challenges?
+
+Reterospective
+|
+4L's
+|
+Loved - Liked - Learned - Longed For - Lacked?
+Loved - Lacked - Learned - Longed For
+
+Dev SetUp
+|
+JDK 21 (LTS - Long Term Support)
+IDE - IntelliJ Idea  | VS Code (Front End)
+Git
+MySql, SQL Server
+Node JS
+
+
+Git -> VCS (Version Control System)
+Github -> Online Repository
+
+Connecting Git with GitLab using SSH / Https
+
+STEPS: gitlab -> profile -> preferences -> learn more -> open Git bash & follow below commands ->
+
+Https Access Token:     ----------> HfEvS8noyZc7_6TEBng2  <------------
+
+commands -> git clone <clone link (either ssh or https)>
+
+
+git init -> creates repo in cloud
+git remote -> connects 
+git add . -> Add All to staging
+git status
+git restore --staged <filename> -> to remove staged files
+git commit -m "Added program.java" -> 
+git push -> to update remote repo
+git pull -> to update local repo
+
+Ambiguity cases:
+
+remote changed, local not changed
+
+git course-> coursera by atllasian
+
+
+------------------------
+Day 2 - Date: 20/08/2024
+------------------------
+
+what are we going to do today?
+java
+Software Development Process
+
+SDLC - Software Development Life Cycle
+
+Requirement Gathering -> Software Design -> Implementation -> Test -> Deployment
+
+Agile Framework - Scrum
+
+CICD - Continuous Integration & Continuou Derivation
+
+What are the technologies/ tools to learn to become a fsd
+|
+
+Backend -> Java/Dotnet/PHP/Python/JavaScript (Java)
+Spring Framework/DJango/Express JS
+MySQL/Postgres/MongoDB/Cassandra
+
+Frontend -> HTML,CSS,JavaScript
+Bootstrap,Tailwind
+Angular/ React / Vue JS
+
+Devops -> Git, Maven/NPM, Jenkins(CICD Pipeline)
+
+Cloud -> AWS/Azure/GCP (Stephney)
+
+AutoScaling, Containerization -> Docker, Kubernetes
+Infrastructure IAC Code -> Terraform
+Ansible
+SonarQube
+
+Project Management - Jira
+
+Naming Standard
+|
+variables -> camelCase
+class/interface/recordnames -> starts with Uppercase
+package -> lowercase
+constants/enums -> Uppercase
+
+Random Number:
+1. random number gen
+2. while
+	take number
+	check
+	if yes, exit
+	no repeat
+
+conditional evaluation
+
+if-else
+switch-case
+
+Currency Converter:
+
+------------------------
+Day 3 - Date: 21/08/2024
+------------------------
+
+OOPS Concepts:
+
+1. Class and Objects
+
+2. Stack Memory and Heap Memory
+stack -> main, person1, person2
+heap -> [name, age location], [name, age, location]..
+
+3. 4 Pillars of OOPS
+
+4. Class and Objects Implementation
+-> Encapsulation, 
+
+5. Constructors
+
+6. Access Specifiers
+private -> only within the class
+public -> all packages
+protected -> within the package and classes inheriting from outside package
+default -> within the package
+
+7. Abstraction
+abstract keyword
+
+8. Final keyword
+abstract and final keywords are opposite?
+
+9. Interface
+
+------------------------
+Day 4 - Date: 22/08/2024
+------------------------
+
+1. Arrays:
+        int b[][] = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+        for(int rows[]: b){
+            for(int ele: rows){
+                System.out.print(ele + " ");
+            }
+            System.out.println();
+        }
+
+2. Strings:
+Never compare objects using "==" character
+
+String str1 = "UST"
+String str2 = "UST"
+sout(str1 == str2) --> True
+
+String str1 = new String("UST");
+String str2 = new String("UST");
+sout(str1 == str2) --> False
+
+str.strip()
+str.replace(<oldchar>,<newchar>)
+str.concat("UST Global","Triandrum") -> return concatenated string, doesn't store
+
+
+Heap has metaspace where the immutable String gets Stored
+
+3. String Builder & String Buffer (Mutable Strings):
+
+String Buffer -> Thread Safe
+String Builder -> Not Thread Safe
+Always use String Builder
+
+Any Object can be converted to String using ".toString()"
+Any number can be converted to String using "String.valueOf(<int variable/ number>)" and <variable> + ""
+
+sout(5+6+"3"+1+8) --> 11318
+
+4. Layers Architecture
+
+Presentation -> Service -> Repository -> Database
+
+Presentation -> taking input & putting output / MVC Controller .. etc.
+service -> Business Login
+
+Enum --> Select from options
+ex: size = small, medium, large
+package com.ust.ecomm.model;
+
+public enum Size {
+    X_SMALL, SMALL, MEDIUM, LARGE, X_LARGE;
+}
+
+
+instance of ->
+ex:
+            if(p instanceof Electronics){
+                price = p.getPrice();
+                price = price - price * 0.1;
+                p.setPrice(price);
+            }
+
+------------------------
+Day 5 - Date: 23/08/2024
+------------------------
+
+dto/model
+
+Why interfaces are used, if we can make direct objects from class->
+loose coupling, multiple inheritance
+
+Printable p = new CanonPrinter(); -> loose coupled
+
+CanonPrinter cp = new CanonPrinter(); -> tight coupled
+
+Datatypes:
+
+int, float, long, short, double, char, short, byte -> stores in stack
+String, Arrays, Object -> stores in heap
+
+Call by value: 
+Call by reference: 
+
+Java is?
+
+Lets check:
+
+Student
+- String subject;
+Student Manager:
+- updateStudent(Student s){
+	...
+  }
+
+------------------------
+Day 6 - Date: 26/08/2024
+------------------------
+
+This Week ->
+Exception Handling,
+Collection Framework,
+Java 8 Stream API,
+Multi Threading,
+File Handling,
+MySQL + JDBC.
+
+Exception -> checked / compile time exception , unchecked / runtime exception
+
+checked ->
+- can't be avoided
+- compiler forces u to handle the exception
+ex: file not found exception
+
+unchecked ->
+- can be avoided using extra code
+- compiler doesn't force u to handle the exception
+- ex: arithmetic exception
+
+Throw -> 
+- to throw an exception
+- followed by Objects ex: throw new RuntimeException("Hi");
+
+Throws ->
+- Use when you don't want to handle exception
+- Can be used with only checked exception like FileNotFoundException
+- followed by class ex: throws Exception
+
+Exception Handling with respect to Overriding ->
+
+can we throw exception from overridden method? 
+- yeah, but only unchecked exception
+
+- when super method doesn't throw exception
+- child method cannot throw any checked exception but can throw unchecked exceptions
+
+- when super method throws an unchecked exception, no problem
+- when super method throws an checked exception, child method can throws sub and same exception but not super exception
+
+------------------------
+Day 7 - Date: 27/08/2024
+------------------------
+
+Collection Framework
+
+List ->
+- Ordered Collection
+- Allows Duplicates
+- Uses index
+
+- we can't remove elements in collection using index, but can be done using List
+
+CalculatorClass<Integer> cal = new CalculatorClass<>(10);
+
+Integer (Left Side) -> Compile time
+Integer (Right Side) -> Run time
+
+CalculatorClass<Object> cal = new CalculatorClass<>(10);
+                |
+                v				
+CalculatorClass<?> cal = new CalculatorClass<>(10);
+
+List ->
+
+Difference betweeen ArrayList and LinkedList
+
+HashSet ->
+- Unordered Collection
+- Don't allow duplicates
+
+
+						  ArrayList		LinkedList		HashSet
+Insertion / Deletion		O(n)		   O(1)		     O(1)
+access -> 					O(1)		   O(n)		     O(1)
+
+equals() and Hashcode()?
+Comparable?
+
+------------------------
+Day 8 - Date: 28/08/2024
+------------------------
+
+queue.add() -> not a good practice, queue.offer() -> best
+
+Todo App ->
+
+use queue for initial storing
+use stack for completed tasks
+
+Map ->
+
+------------------------
+Day 9 - Date: 29/08/2024
+------------------------
+
+Java 8 ->
+- default and static method
+- lamda expressions
+- 
+
+default and static method:
+
+- we can't have private method in interface, but can when we initialize body in interface.
+- ex:
+interface Printer{
+	private void print(){
+	
+	}
+}
+
+- static method can't be overrided.
+- we can write method with body from java 8, it's only possible when you use default keyword
+ex:
+interface Printer{
+	default void scan(){
+		System.out.println("Default scan..");
+	}
+}
+class MyPrinter implements Printer{
+	default void print(){
+		System.out.println("Print..");
+	}
+}
+main{
+	Printer p = new MyPrinter();
+	p.scan();  // Default scan..
+	p.print(); // Print..
+}
+
+** default is a optional implementation, we can use or ignore in implemented class
+
+- Why Java doesn't support multiple inheritance?
+- Let's say A and B are both parent classes and c is a child class extending both A and B, if A and B has same method, then C can't extend both methods from A and B. This problem is called Diamond Problem.
+- if A and B are interfaces then C must initialize the method.
+- if A and B are both default methods then c must override the method.
+
+Lamda Expressions->
+- mostly used for interface or abstract class with one abstract method using is anonymous object.
+- ex:
+		Printer p = new Printer() {
+            @Override
+            public void print() {
+                System.out.println("Printing...");
+            }
+        };
+- In Lamda Expressions:
+		Printer p = ()-> System.out.println("Printing...");
+		
+- Interface with one abstract method called as "functional interface".
+	
+- static method:
+- ex:
+interface Printer{
+    void print();
+    static void fun(){
+        System.out.println("Have Fun");
+    }
+}
+
+Printer.fun() // funciton call
+
+- Passing parameter using lamda expression:
+- ex:
+			Printer p = (String str)-> System.out.println("Printing... " + str);
+			p.print("Hell Ust");
+- Optimized:
+			Printer p = s -> System.out.println("Printing... " + s);
+			p.print("Hell Ust");
+			
+- What is the major use of lamda expression?
+	what is functional programming? -> In java there's no way to pass function as argument unlike python, js. Javs is not functional programming
+	
+	ex:
+	package lamdaexpression;
+
+	interface MathOperation{
+		int doCalculation(int a, int b);
+	}
+
+	class Calculator {
+		int calculate(int a, int b, MathOperation operation){
+			return operation.doCalculation(a, b);
+		}
+	}
+
+	public class CalculatorEx {
+		public static void main(String[] args) {
+			Calculator calci = new Calculator();
+			int sum = calci.calculate(10, 5, (a, b)-> a+b);
+		}
+	}
+	
+- Stream API:
+- 	ex:	int sum = 0;
+        list.forEach(i-> {
+            sum += i;
+        });
+	Not possible
+** We can't mutate inside foreach...
+
+Streamapi ?
+Consumer Interface?
+
+------------------------
+Day 10 - Date: 30/08/2024
+------------------------
+
+Imperative Programming , Declarative Programming
+		|							|
+if-else, loops...			reduce(), filter()...
+							ex: MySql
+							
+
+4 types of method reference
+-static mr
+		list.forEach(System.out::print);
+		
+-instance mr
+		list.stream().map(s -> s.toUpperCase()).forEach(System.out::println);
+        list.stream().map(String::toUpperCase).forEach(System.out::println);
+		
+-constructor mr
+		
+		
+Website for reference: Baeldung
+
+Time API->
+
+Making class immuntable...
+		Traineee t1 = new Traineee(1, "name1", new Date(2024, 8, 18));
+        t1.getDatejoined().setYear(2024-1900);
+        System.out.println(t1);
+		
+- though avoiding setters method , we can change the date using its setYear method.
+
+
+ 	public Date getDatejoined() {
+        return new Date(datejoined.getYear(), datejoined.getMonth(), datejoined.getDay());
+    }
+	
+- Java supports shallow copy, not deep copy.
+
+- LocalDate is immutable, whereas Date is mutable.
+- In Java we have 
+	LocalDate
+	LocalTime
+	LocalDateTime
+
+
+--------------------------
+Day 11 - Date: 31/08/2024
+--------------------------
+
+Maven -> Build tool
+- Dependency Management
+- Project Structure
+- Plugins
+
+Gradle -> Alternate to Maven
+
+pom.xml -> project object model
+
+we will be able to create jar for our project using "package" in right maven window > "project name" > lifecycle > package.
+package -> creates package/jar file
+clean -> removes package/jar file
+install -> similar to package
+deploy -> used for deployment
+
+** to delete intermediate downloaded dependency, we just go to C: > Users > Username > .m2
+** delete .m2 file and re install the dependency.
+
+Software Testing ->
+- Unit Testing
+	testing individual units
+- Integration Testing
+	testing modules interaction
+- E2E Testing (End to End)
+	
+JUnit -> provides tools and libraries for testing
+
+Junit api -> for libraries to test
+Junit engine -> for running tests
+
+Testing->
+
+@Test keyword is used before test method
+
+Assertions.assertEquals(50, calc.add(10, 20));
+
+* in float and double -> divided by '0' won't give exception but gives "Infinity"
+
+Assertions.assertThrows(ArithmeticException.class, () -> calc.divide(10, 0));  // to test for exception
+Assertions.assertThrows(Exception.class, () -> calc.divide(10, 0));
+Assertions.assertThrowsExactly(Exception.class, () -> calc.divide(10, 0));	// wrong, get's error
+
+4 lifecycle methods in jUnit:
+-> BeforeEach
+-> AfterEach
+-> BeforeAll
+-> AfterAll
+
+ex:		private Calculator calci;
+		@BeforeEach
+		void setUp(){
+			calci = new Calculator();
+		}
+		
+@Slf4j - lombok annotation
+log.info("Calculator Object Created")
+
+* Object get created for each test and get destroyed automatically after the end of test.
+
+** Use static methods for @BeforAll and @AfterAll or use @TestInstance before class
+
+@Disabled -> direct disable
+@DisableOnJre(JRE.JAVA_21) -> disable on jre version 21
+@EnableOnJre(JRE.JAVA_21 -> enable on jre version 21
+@EnableOnOs(OS.MAC) -> enable for only Mac os
+@EnabledIf() -> based on conditon
+....etc.
+
+Nested Test, Parameterized Test...?
+
+--------------------------
+Day 12 - Date: 02/09/2024
+--------------------------
+
+Mocking ->
+
+Multi Threading ->
+
+Two important Life Cycles of Thread
+
+New 	new Thread()
+|
+| start()
+V
+Runnable --->  Running
+  | A			  |
+  | |			  |
+  |  --------------
+  V
+  
+Total States -> Runnable, Running, Blocked, Dead
+
+sleep() puts thread in block state, can get into runnable after sleep completes
+wait() also puts thread in block state, can get into runnable by notify()
+suspended()
+
+join() -> opp to yield, don't allow other Threads to run
+yield() -> giving chance to switch another Thread to run
+
+sleep, yield are static.
+join is not static
+
+Thread Synchronization -> One Thread at a time.
+
+using synchronized is not a good way to synchronize any method.
+Problem with synchronized?
+- it makes entire method synchronized.
+- we can't make particular lines of code synchronnized ..
+
+** Synchronized block is a good solution, but lock & unlock are being used widely.
+
+Ex:
+		Lock lock = new ReentrantLock();
+
+		public synchronized void printScores(String player, List<Integer> scores){
+			lock.lock();
+			System.out.println("Scores of " + player);
+			scores.forEach(s -> System.out.println(s));
+			lock.unlock();
+		}
+		
+--------------------------
+Day 13 - Date: 03/09/2024
+--------------------------
+
+File Handling
+
+Byte Stream
+Character Stream
+NIO
+
+File Input Stream:
+
+        try{
+            InputStream input = new FileInputStream("filehandling\\data.txt");
+            Scanner scanner = new Scanner(input);
+
+            while (scanner.hasNextLine()){
+                String line = scanner.nextLine();
+                System.out.println(line);
+            }
+//            int ch;
+//            while((ch = input.read()) != -1){
+//                System.out.print((char)ch);
+//            }
+        } catch (IOException e){
+            System.err.println(e.getMessage());
+        }
+		
+File Output Stream:
+
+
+Ways to handle files:
+
+file input/output Stream
+file reader/writer
+buffer reader/writer 
+NIO -> best approach
+Random Access File
+
+Block vs Non-Blocking:
+
+non-blocknig -> 
+blocking -> 
+
+** maybe error statement prints later the another normal print statement, here error print statement is not blocking the flow.
+
+* close() is important
+
+Random Access File?
+
+Serialization:
+- used to save the state in a file, so that we can share
+- giving object to others by saving 
+
+OutputStream output = new FileOutputStream("trainee.ser");
+ObjectOutputStream objectOutputStream = new ObjectOutputStream(output);
+
+--------------------------
+Day 14 - Date: 04/09/2024
+--------------------------
+
+SonarQube -> Code Quality Check -> Software Quality Management
+Link -> https://gitlab-ust.stackroute.in/ust-trv-2024/ust-classroom-repo-2024/-/blob/main/SonarQube-readme.md
+
+JACOCO -> Generates Test Report
+
+Regex -> https://github.com/ramanujds/ust-global-2023
+
+Sealed and Non-Sealed Classes:
+sealed class restricts the extension of the class, whereas final restricts all classes, sealed class can allow extend few other classes.
+ex:
+	public sealed class Employee permits Manager{
+	}
+	public non-sealed class Manager extends Employee{
+
+	}
+
+Record:
+- records are immutable
+- we can't extend record
+
+Model class / dto class?
+
+switch(day){
+}
+
+
+return switch(day){
+	case 12, 1, 2 -> 
+}
+..?
+
+--------------------------
+Day 15 - Date: 05/09/2024
+--------------------------
+
+Garbage Collection ->
+
+Daemon Thread -> low priority thread, always keeps on running
+- Garbage Collection is  a Daemon Thread
+
+Explicitly call garbage Collecor
+- System.gc
+- Runtime.getRuntime().gc()
+
+* constructor creates objects
+* finalize is being call when object gets garbage collected
+
+ZGC garbage collector
+
+--------------------------
+Day 16 - Date: 06/09/2024
+--------------------------
+
+Database
+
+DBMS
+
+RDBMS -> MySql, Oracle, Postgres
+
+No-Sql Based -> MongoDB, AWS Dynamo DB
+	|
+	v
+No only sql
+
+language -> Structured Query Language
+
+
+DDL -> create, alter, drop, truncate
+DML -> insert, updat, delete
+DQL -> select
+DCL -> grant revoke
+TCL -> commit, rollback, savepoint
+
+--------------------------
+Day 17 - Date: 09/09/2024
+--------------------------
+
+Contraints:
+- primary key
+- not null
+- unique
+- default
+- check
+- foreign key
+
+
+Joins:
+- Inner join
+- Left Join
+- Right Join
+- Full Join
+- Self Join
+
+Correlated Queries?
+
+
+--------------------------
+Day 17 - Date: 09/09/2024
+--------------------------
+
+
+--------------------------
+Day 18 - Date: 10/09/2024
+--------------------------
+
+Normalization:
+
+Funcitonal Dependency:
+
+super key || candidate key || primary key 
+
+Alternate key - non candidate key are alternate keys
+
+
+1NF -> No multivalued attributes
+2NF -> No partial dependency
+3NF -> No Transitive dependency
+BCNF -> Boyes codd normal form
+
+Non prime in left side , prime in the right side
+
+prime -> non-prime 
+non-prime -> prime (should n't be there)
+
+--------------------------
+Day 19 - Date: 11/09/2024
+--------------------------
+
+
+
+--------------------------
+Day 20 - Date: 12/09/2024
+--------------------------
+
+Trigger ->
+
+- after trigger
+- before trigger
+
+describe table -> desc <tableName>
+
+exex sp_columns <tablename>;
+
+Commit and Rollback (Transaction Control)->
+
+Begin transaction
+save tran p1;
+
+delete from trainee;
+
+rollback transaction p1;
+commit;
+
+Transaciton ensures
+
+ACID properties -> atomicity, consistency, isolation, durability
+
+rollback Transaction not applicable for DDL commands -> create, drop, truncate, alter
+
+--------------------------
+Day 21 - Date: 13/09/2024
+--------------------------
+
+-p = publish
+-e = environment
+-d = 
+
+docker pull mysql
+
+docker run -p 3307:3306 -d -e MYSQL_ROOT_PASSWORD=password -e MySQL_DATABASE=ust_db --name mysql mysql
+
+docker ps
+
+docker exec -it mysql bash
+
+mysql -u root -p
+
+use ust_db
+
+--------------------------
+Day 22 - Date: 17/09/2024
+--------------------------
+
+SOLID Princple:
+- object oriented design 
+- standard to develop
+
+s -> single responsibility
+o -> open-close principle
+l -> liskov substitution princple
+i -> interface segregation princple
+d -> Dependency Inversion
+
+1. single responsibility -> 
+2. open-close principle ->
+	C:\Users\286199\Desktop\UST\design-patterns\src\opencloseprincple
+	- open for extension, closed for modification
+	- use override methods
+3. Liskov substitution princple ->
+	C:\Users\286199\Desktop\UST\design-patterns\src\liskovsubstitution
+	- superclass object is always replacable by subclass object
+	Calculator c;
+	AdvancedCalculator extends Calculator
+4. Interface segregation princple ->
+	C:\Users\286199\Desktop\UST\design-patterns\src\interfacesegregation
+	3rd and 4th princple talks about same problem(subclass shouldn't have implmentation of unnecessary super class methods) but solves in a different way.
+	because we can't extend multiple classes but can implement multiple interfaces.
+5. Dependency Inversion ->
+	- always declare the object of interface/specification and implementation of class
+	- code should be dependant on interface, but not implementation
+
+Design Patterns:
+	- are derived from solid princples
+Divided into 3 types:
+1. creational patterns
+	- about object creation
+	- Singleton: at a point of time, we should have only one object for a class
+- Singleton design pattern - one class has only one object
+- Builder design pattern - ex: pizza example, using pizzabuilder we can create object as user like
+- Builder design pattern used when there's many optional attributes
+- using lombok, @Builder we can easily implement builder design pattern
+2. structural patterns - how classes are communicating with each other
+3. behavioral patterns - 
+https://github.com/ramanujds/ust-global-b4-2024/tree/main/idea-workspace/design-patterns/src/creationalpatterns/builder
+
+facade design pattern
+frontend -> rest api -> backend
+
+observer design pattern -> ex: youtube susbscriber notification
+
+--------------------------
+Day 23 - Date: 18/09/2024
+--------------------------
+
+Module 1:
+
+Git
+SDLC and Agile
+Java
+Java 8-11-17
+JUnit
+Database
+JDBC
+Design Patterns
+
+--------------------------
+Day 24 - Date: 19/09/2024
+--------------------------
+
+Module 2:
+
+Front-End Technologies ->
+HTML
+CSS
+Bootstrap
+JavaScript
+Angular
+
+Tools ->
+VS Code
+Node JS
+Angular
+
+Install angular -> npm install -g @angular/cli
+nodevars
+ng version
+
+angular vs react
+- both are js framework
+- both divide screen into components
+- react -> pure js and js library
+- angular is declarative(ex: sql, stream api, less on logic, more on remembering), react is imperative(if else, simple js)
+
+creating application:
+ng new hello-angular
+ng serve
+4200
+
+npx create-react-app hello-react
+npm start
+3000
+
+HTML:
+
+inline elements -> span, a, img, em, b
+block elements -> p, div, section, h1
+empty tags -> hr, br, img
+
+<ol type="A">
+	<li></li>
+	<li></li>
+	<li></li>
+</ol>
+
+ordered list
+unordered list
+description list -> 
+	<dl>
+        <dt>hello world</dt>
+        <dd>hello world</dd>
+        <dt>hello world</dt>
+        <dd>hello world</dd>
+        <dt>hello world</dt>
+        <dd>hello world</dd>
+        <dt>hello world</dt>
+        <dd>hello world</dd>
+    </dl>
+	
+	<table border = 1px>
+        <thead>
+            <tr>
+                <th rowspan="2">Building Name</th>
+                <th colspan="2">Location</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Headquaters</td>
+                <td>city</td>
+                <td>state</td>
+            </tr>
+            <tr>
+                <td>Headquaters</td>
+                <td>city</td>
+                <td>state</td>
+            </tr>
+            <tr>
+                <td>Headquaters</td>
+                <td>city</td>
+                <td>state</td>
+            </tr>
+            <tr>
+                <td>Headquaters</td>
+                <td>city</td>
+                <td>state</td>
+            </tr>   
+        </tbody>
+    </table>
+
+
+    <h1><a href="https://www.ust.com/" target="_blank">UST Global</a></h1>
+	
+--------------------------
+Day 25 - Date: 20/09/2024
+--------------------------
+
+PRESENTATIONS
+
+--------------------------
+Day 26 - Date: 21/09/2024
+--------------------------
+
+Project 
+
+--------------------------
+Day 27 - Date: 23/09/2024
+--------------------------
+
+Bootstrap
+
+--------------------------
+Day 28 - Date: 24/09/2024
+--------------------------
+
+JavaScript
+
+Front End - React JS, Angular
+Backend - Node JS, Express
+Android / IOS - React Native
+AI/ML - Tensorflow JS
+
+current standard verison - ES6 (Ecma Script)
+
+types:
+- number
+- string
+- date
+- object 
+- boolean
+- class (from es6)
+
+let - type : any
+var - legacy - global scope (not recommended to use)
+const 
+
+in js, except not null, not defined, 0 is true;
+
+--------------------------
+Day 29 - Date: 25/09/2024
+--------------------------
+
+<%@ page import ="..." %> 
+
+<%@ %> known as jsp decorative? -> outside of class
+
+<%! %> known as jsp declaration -> inside class
+
+<% %> known as scriplet -> inside service() but no println()
+
+<%= %> known as expression -> inside out.println()
+
+** jsp is used to display
+** servlet can be used to process and do operations
+
+
+view.jsp
+
+<!--<% Trainee trainee = (Trainee) request.getAttribute("trainee"); %>
+
+        <h2> Hello <%= trainee.getName() %>!</h2>
+
+        <h2>Hello <%= request.getAttribute("trainee")%>!</h2>-->
+		
+--------------------------
+Day 30 - Date: 26/09/2024
+--------------------------
+
+promise => two states
+
+https://api.github.com/users/chandra-lokesh
+
+AJAX => Asynchronous javascript and xml
+
+XHR => 
+	
+npm install -g json-server
+
+json-server trainees.json 
+
+Rest API / API -> 
+
+--------------------------
+Day 30 - Date: 27/09/2024
+--------------------------
+
+ng new hello-ust
+
+server side rendering - no
+
+cd hello-ust
+
+ng serve
+
+ng g c play
+
+--------------------------
+Day 31 - Date: 30/09/2024
+--------------------------
+interpolation?
+
+ng new hello-ust-angular-old --standalone=false
+
+--------------------------
+Day 32 - Date: 01/10/2024
+--------------------------
+
+Javascript unit testing
+
+Test Pyramid:
+
+Acceptance Test 
+|
+V
+E2E
+|
+V
+Integration test
+|
+V
+Unit Test
+
+Jest
+Mocha
+Chai
+
+
+Steps:
+1. run "npm init" and put test command: jest
+2. Add Jest to your project using "npm i --save-dev @types/jest" -> "npm i --save-dev jest"
+3. npm test to test the files
+
+ER Diagram
+
+Library Vs Framwork
+
+Spring Framework:
+- Spring Core Dependency Injection
+- Spring Web MVC
+- Spring REST
+- Spring Data
+- Spring Cloud
+- Spring Security
+
+Spring Framework - version6
+SpringBoot - version3
+
+spring is not a backward compatible
+
+IOC Container
+
+--------------------------
+Day 33 - Date: 03/10/2024
+--------------------------
+
+Spring boot annotations:
+
+@Autowired -> to inject object
+@Qualifier("name") -> to select object specifically
+@Component - @Service, @Repository 
+@Configuration -> for config file where beans are created
+@ComponentScan("com.ust.org") 
+@PropertySource("application.properties")
+@Value("${db.url}")
+@Primary
+@Lazy
+
+types of beans:
+
+
+@Scope("singleton")
+@Scope("prototype")
+
+@Lazy
+
+
+execute() -> general purpose (select, insert, delete, update)
+- returns boolean
+- true if result is resultset for select queries
+- false if it is an update count (for INSERT, UPDATE, DELETE queries)
+
+executeQuery() -> select queries
+- returns resultset
+
+executeUpdate() -> use for updating table like insert, update, delete, alter, create, drop
+- returns int representing number of rows changed
+
+Statement statement = connection.createStatment();
+String query = "select * from employees where id = 10";
+ResultSet resultset = statement.executeQuery(query);
+[OR]
+String query = "Update employees set name='rahul' where id = 10";
+int rows = statement.executeUpdate(query);
+
+--------------------------
+Day 34 - Date: 04/10/2024
+--------------------------
+
+Sir Absent
+
+--------------------------
+Day 35 - Date: 05/10/2024
+--------------------------
+
+ApplicationContext
+
+@Component
+@Service
+@Repository
+
+@Configuration
+@ComponentScan
+
+@Bean
+@Primary
+
+@Autowired(required=false)
+@Qualifier
+
+@PropertySource
+@Value
+@Scope
+@Lazy
+
+Spring MVC with SpringBoot
+
+
+client --request-->
+
+jsp files can't be returned and runned without jasper dependency
+
+--------------------------
+Day 36 - Date: 07/10/2024
+--------------------------
+
+REST-API -> representational state transfer
+- always returns resources
+
+MVC -> returns view
+
+to return json() / resources just use @ResponseBody under @GetMapping or simple use @RestController in place of @Controller
+
+type "openapi ui" in mvn for swagger dependency for api tester
+
+type "swagger-ui.html" in url
+
+DTO -> Data Transfer Object
+
+--------------------------
+Day 37 - Date: 08/10/2024
+--------------------------
+
+JPA -> Java Persistance API
+ORM -> Object Relation Mapping
+
+Hibernate -> ORM Framework / Provider
+Hibernate is implementation : JPA is specification
+
+Spring Data JPA
+
+--------------------------
+Day 38 - Date: 09/10/2024
+--------------------------
+
+cascade type -> 
+
+--------------------------
+Day 39 - Date: 10/10/2024
+--------------------------
+
+HATEOAS
+
+--------------------------
+Day 40 - Date: 11/10/2024
+--------------------------
+
+Task management backend implementation
+
+--------------------------
+Day 41 - Date: 14/10/2024
+--------------------------
+
+Testing
+
+spring embedded database for testing - h2
+
+
+--------------------------
+Day 42 - Date: 15/10/2024
+--------------------------
+
+
+mongo db:
+
+show dbs;
+use trainee_db;
+db.createCollection('Trainee')
+db.getCollectionNames()
+
+db.trainee.find().pretty();
+db.trainee.find({location: 'Chennai'});
+
+db.trainee.update({}, { $set: {}})
+
+
+db.createUser({
+  user: "lokesh",
+  pwd: "password",
+  roles: [
+    {
+      role: "readWrite",
+      db: "trainee_db"
+    }
+  ]
+})
+
+--------------------------
+Day 43 - Date: 16/10/2024
+--------------------------
+
+Authentication -> 
+Authorization
+
+
+-----------------
+Date: 21/10/2024
+-----------------
+
+Cloud Computing ->
+
+- on demand resource sharing
+- AWS, Azure, GCP
+- Region and Availability Zone
+
+RDS -> relational database service
+S3 -> Simple storage service
+
+IP Addresses: provides entrance for devices to the internet
+ipv4, ipv6
+
+DNS -> Domain Name Server 
+- Translates URL to IP Address
+
+Subnet ->
+Group of IP Addresses and provides classes
+
+gorup 5 classes for each subnet
+max limit -> 255.255.255.255
+min limit -> 0.0.0.0
+
+localhost -> 127.0.0.1:8000
+
+- VPC (Virtual Private Cloud)
+under one iam user we can have 5 VPC's
+and VPC can be attached with Subnets
+
+
+VPC
+|
+V
+Subnets
+|
+V
+IP Addresses
+|
+V
+Security Group --> Inbound role
+               |
+			   --> Outbound role
+			   
+			   
+Different types of cloud:
+private, public, hybrid
+
+three types of services:
+1. IaaS (Infrastructure as service) -> Providing hardwre EC2-AWS, VM-Azure, CE-GCP 
+2. PaaS (Platform as service) -> Elastic Beanstalk-AWS(example: running java program directly)
+3. SaaS (Software as service) -> Gmail, Salesforce
+
+
+How to start your first EC2 instance:
+1. Browse EC2 Service
+2. Click Launch
+
+
+
+
+ssh -i "ust-ec2-key.pem" ec2-user@ec2-34-207-153-99.compute-1.amazonaws.com
+sudo yum install git -y
+
+sudo yum install maven -y
+
+mvn spring-boot:run
+
+
+
+sudo yom install maven -yeah
+install git
+sudo yum install git -y
+
+clone the repo
+run following maven command to build the jar file
+mvn clean install
+*make sure to be in project folder
+
+go to target folder
+run java -jar [file-name.jar]
+
+mvn spring-boot:run
+
+
+-----------------
+Date: 23/10/2024
+-----------------
+
+Running a spring boot application on Elastic Beanstalk
+
+- browse elastic beanstalk service
+- click on create
+
+- go to iam in services
+- create a role for ec2 access for elastic beanstalk
+- roles -> AWS Service ; usecase = ec2 -> select below policies:
+	Required:
+	1. AWSElasticBeanstalkWebTier
+	
+	Optional:
+	2. AWSElasticBeanstalkMulticontainerDocker
+	3. AWSElasticBeanstalkRoleRDS
+	4. AWSElasticBeanstalkEnhancedHealth	
+	5. AWSElasticBeanstalkWorkerTier
+	
+Continue
+
+Select the Instance Profile
+
+** port number should be 5000 to execute in elastic beanstalk
+
+-----------------
+Date: 24/10/2024
+-----------------
+
+RDS
+
+-----------------
+Date: 24/10/2024
+-----------------
+
+CICD -> 
+Continuous Integration -> pull,bill,test
+Continuous Delivery -> 
+Continuous Deployment -> deploy in cloud
+
+Opensource CICD tool -> Jenkins (for all cloud platforms)
+
+AWS CICD tool -> AWS Code Pipeline (for only AWS)
+
+AWS Code Commit (AWS github)
+
+Source code repo
+	|
+	V
+aws code pipeline
+	|
+	V
+aws code build
+	|
+	V
+elastic beanstalk
+	|
+	V
+aws code deploy
+
+
+Steps :
+
+1. Create a Github Repository
+2. clone
+3. create a spring boot application
+4. add a buildspec.yml file
+5. commit and push
+
+6. create an elastic beanstalk app for deployment
+7. deploy the simple app
+
+8. browse code pipeline service
+9. create custom build pipeline
+10. give pipeline name -> select github version 2 -> create new connection -> give connection name -> install new app -> select repo
+11. select other build process -> select AWS CodeBuild
+
+
+-----------------
+Date: 26/10/2024
+-----------------
+
+publisher -> sns -> subscriber
+			  |
+			  V
+		   Topic A
+		   Topic B
+		   Topic C
+		   
+		   
+SQS -> Simple Queuing Service
+SNS -> Simple Notification Service
+
+
+
+Deploy project:
+
+1. clone repo
+2. create spring project
+3. push the project
+4. go to AWS -> EC2
+5. Launch instance -> give name, ubuntu, free tier, keypair name(select existing one), select existing security group, launch instance
+6. connect then install softwares (, spring boot cli, maven)
+
+https://github.com/ramanujds/spring-boot-cicd-ec2-github-action
+
+
+<finalname>spring-boot-app</finalname>
+
+-----------------
+Date: 08/11/2024
+-----------------
+
+Cloud Native Application:
+
+12 Factor Apps
+https://github.com/ramanujds/spring-boot-microservices
+
+Micro Services:
+
+Benifits of Micro Services:
+1. Scalability and availability
+2. Cost Effective
+3. Easy Debug, Test and Deploy
+4. Different Technologies can be used
+
+Challenges of Micro Services:
+1. Needs Additional training and learning
+2. latency
+3. configuration
+4. making the architechture fault tolerant
+
+
+portfolio (8000) --> Stock service (8100)
+				 --> Mutual Fund (8200)
+
+Service Registary				 
+
+4 approaches to call api of another microservice:
+
+1. Rest Template
+2. WebClient          // for asynchronous application -> use rest web dependency
+3. Feign Client
+4. Http Client
+
+
+Steps in Service Registary:
+1. Service Registration
+2. Service Discovery
+3. 
+
+
+-----------------
+Date: 11/11/2024
+-----------------
+
+Circuit Breaker -> 
+states: close, open, half-open
+
+no of request = 5
+threshold = 50%
+Open
+waiting time = 5 secs
+fallback method
+no of allowed request at half open = 1
+
+dependency: resilience4j, actuator, 
+
+-----------------
+Date: 12/11/2024
+-----------------
+
+-----------------
+Date: 13/11/2024
+-----------------
+
+Docker -> 
+
+Client ->  Docker Engine <- Docker Registry
+				|
+			Images,
+			Container
+			
+
+
+Docker Container
+
+
+Image -> running image creates container
+image is like class and container is like object
+
+
+
+To get images -> docker images
+To pull images -> docker pull mysql
+To remove images -> docker rmi <image-name>
+To remove container -> docker rm mysql-container
+To run mysql -> docker run -p 3309:3306 -e MYSQL_ROOT_PASSWORD=password mysql-container -d mysql
+To open bash -> docker exec -it mysql-container bash
+		inside bash: 
+		-> mysql -u root -p
+		-> give password (to enter into mysql)
+		-> exit; (for mysql)
+		-> exit; (for bash)
+Sir's docker pull -> docker pull ram1uj/easy-recipes
+To run above application -> docker run -p 3000:80 --name easy-recipes ram1uj/easy-recipes
+To view running containers -> docker ps
+To view all containers -> docker ps -a
+
+
+https://github.com/ramanujds/docker-exercise
+
+
+
+
+Dockerfile
+
+base Image: openjdk21
+
+files: spring-boot-app.jar
+
+command: java -jar spring-boot-app.jar
+
+
+docker build -t spring-boot-app .
+
+docker run -p 8080:8080 --name spring-boot-app -d spring-boot-app
+
+docker login
+
+
+docker tag spring-boot-app chandralokesh/spring-boot-app
+docker push chandralokesh/spring-boot-app
+
+-----------------
+Date: 14/11/2024
+-----------------
+
+1. create a docker network
+docker network create spring-boot-db-network
+
+2. run postgres/mysql on that network
+docker run --name postgres -e POSTGRES_PASSWORD=password --network=spring-boot-db-network -d -p 5432:5432 postgres
+
+3. spring boot app on that network
+
+** localhost is replaced with container of db
+
+docker run -p 8000:8080 --name=todo-app --network=spring-boot-db-network -e POSTGRES_HOST=postgres -e POSTGRES_PORT=5432 -e POSTGRES_DB=postgres -e POSTGRES_USER=postgres - -d todo-app
+
+
+docker inspect todo-app
+
+
+creating docker-compose.yml
+
+docker compose config
+docker compose up
+docker compose down
+
+plugins -> spring-boot -> spring-boot-build-image
+
+Install Docker and Docker-compose
+
+sudo yum install docker
+sudo service docker start
+
+sudo curl -L 
+
+
+-----------------
+Date: 15/11/2024
+-----------------
+
+
+Docker and Docker Compose Notes ->
+https://gitlab-ust.stackroute.in/ust-trv-2024/ust-classroom-repo-2024/-/blob/main/docker-notes-and-commands.md
+
+
+to delete all container which are not running:
+
+docker container prune
+
+
+-----------------
+Date: 18/11/2024
+-----------------
+
+Kubernetes
+
+container orchestration
+
+ECS -> elastic container service (alternate to kubernetes)
+
+ECR -> elastic container registrate (alternate to docker hub)
+
+Components of kubernetes:
+
+container is inside POD 
+Node -> Server
+what we create in kubernetes is called deployment
+
+Kubernetes important components -> Node, POD, Deployment, Service, Ingress, Secrets, ConfigMap
+
+kubernetes cluster -> master node (master node), servant node 
+
+kubelet
+
+-> minikube start
+-> kubectl
+-> kubectl create deployment easy-recipes --image=ram1nuj/easy-recipes
+-> kubectl expose deployment easy-recipes --type=NodePort --port=80
+-> minikube service easy-recipes
+-> kubectl delete easy-recipes
+-> kubectl delete svc easy-recipes
+-> kubectl expose deployment easy-recipes --type=LoadBalancer --port=80
+-> kubectl get deployments
+-> kubectl get svc
+-> kubectl delete deployment [deployment-name]
+
+scaling applications:
+kubectl scale deployment easy-recipes --replicas=3
+
+pushing a new release:
+kubectl set image deployment easy-recipes easy-recipes = ram1nuj/covid-info
+
+
+kubectl get Pods
+
+minikube stop
+
+minikube delete --all
+
+rm -rf ~/.minikube
+
+minikube start --force-systemd=true
+
+
+-----------------
+Date: 19/11/2024
+-----------------
+
+spring security
+
+			------->	/login + credentials  ------->
+				
+client		------->	  request + token	  ------->		server
+				
+			<-------	     response         <-------
+			
+			
+			
+JWT -> JSON web token
+
+header , paylod, signature
+
+** JWT is used for authorization not authentication
+
+steps of authentiacation & authorizaiton:
+
+1. Authenticate -> check if the username and password is correct
+2. Generate Token 
+3. request -> /hello + Token (need to check token and authorize), instead use filter/ Interceptor (generate user from token and check if user exist and generate springcontext)
+
+
+-----------------
+Date: 20/11/2024
+-----------------
+
+OAuth 2.0 -> signing in with third party platform like google, facebook, linkedin, ...
+
+stateless -> 
+
+Kafka or Rabbit MQr (Alternate to SQS -> simple queuing service)
+
+Angular ->
+Data Binding
+- Property Binding
+- String Interpolation
+- Event Binding
+- Two-way Binding
+
+Directives
+*ngFor / @for
+*ngIf / @if
+*ngClass, ngStyle
+
+Forms
+- Template Driven
+- Reactive
+
+Services and Dependency Injection
+
+Router
+Pipes
+HTTPClient
+
+Todo-App Angular ->
+header
+main
+add-todo
+view-todos
+footer
+
+
+app
+	header
+	main
+		add-todos
+		view-todos
+	footer
+	
+
+angular forms ->
+1. temlplate driven form -> HTML oriented
+2. reactive -> typescript
+
+
+ng serve
+ng g c add-todo
+ng g s todo-data (create service)
+
+
+-----------------
+Date: 21/11/2024
+-----------------
+
+ng g c add-todos-reactive
+
+todo-app implementation in angular
+
+-----------------
+Date: 22/11/2024
+-----------------
+
+routes	
+
+
+<router-outlet>
+
+websecurityconfigureadapter
+
+
+-----------------
+Date: 25/11/2024
+-----------------
+
+csrf filter
+usernameauthentication
+
+Newer Approach -> 
+
+@Bean
+SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+	http.authorizeHttpRequest(req -> {
+		req.requestMatcher("/api/public").permitAll();
+		req.anyRequest().authenticated();
+	});
+	http.formLogin(AbstractHttpConfigurer::disable);
+	http.httpBasic(Customizer.withDefaults())
+	return http.build();
+}
+
+
+
+Older Approach ->
+
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
+
+	@Bean
+	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+		http.authorizeHttpRequest(req -> {
+			req.requestMatcher("/api/public").permitAll();
+			req.anyRequest().authenticated();
+		});
+		http.formLogin(AbstractHttpConfigurer::disable);
+		http.httpBasic(Customizer.withDefaults())
+		return http.build();
+	}
+	
+	// initial implemented method 
+	@Override
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
+		super.configure(auth);
+	}
+	
+	
+	// updated method
+	@Override
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
+		UserDetails users = User.builder() // .withDefaultPasswordEncoder()
+			// .passwordEncoder(getPasswordEncoder())
+			.username("admin")
+			.password("admin1234")
+			.roles("ADMIN")
+			.build();
+		
+		UserDetails user = User.builder()
+			.username("user")
+			.password("pass1234")
+			.roles("USER")
+			.build();
+			
+		auth.inMemoryAuthentication()
+			.withUser(users;
+			.withUser(admin);
+	}
+	
+	@Override
+	protected void configure(HttpSecurity http) throws Exception{
+		http.authorizeHttpRequests()
+			.antMatchers("/api/public").permitAll()
+			.antMatchers("/api/public").hadRole("admin")
+			.anyRequest.authenticated()
+			.and()
+			.formLogin();	//.disable()
+			.and()
+			.httpbasic();   // used if we want to send credentials in postman 
+			// .and()
+			// .sessionManagement()
+			// .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // only works on postman and used in JWT tokens concept
+			
+	}
+	
+	@Bean
+	public PasswordEncoder getPasswordEncoder(){
+		return new BCryptEncoder();
+	}
+
+}
+
+
+
+public class UserDetailsServiceImpl extends UserDetailsService {
+
+	
+}
+
+
+what is needed for JWT -> 2 tasks : Generate the Token, 
+
+1. create a new controller file "AuthController" which takes username and password 
+	(create dto with username and password and another dto for jwt)
+	
+	use @Data and @Builder for jwt dto
+
+
+@RequestController()
+public class AuthController{
+	
+	
+}
+
+2. Create "AuthService"
+3. Create "JwtUtil"
+
+https://gitlab-ust.stackroute.in/ust-trv-2024/ust-classroom-repo-2024/-/tree/main/spring-security
+
+
+-----------------
+Date: 26/11/2024
+-----------------
+
+Angular Life Hooks
+- ngOnChanges()
+- ngOnInit()
+- ngDoCheck()
+- ngAfterContentInit()
+- ngAfterContentChecked()
+- ngAfterViewInit()
+- ngAfterViewChecked()
+- ngOnDestroy() 
+
+
+Guards:
+ng g g my-route
+
+Pipes:
+
+
+-----------------
+Date: 27/11/2024
+-----------------
+
+taskList.stream()
+	.peek(() -> {
+		try{
+			Thread.sleep(1000);
+		}
+		catch(InterruptedException ex){
+			throw new RuntimeException(e);
+		}
+	})
+	.toList();
+	
+https://github.com/ramanujds/blue-yonder-repo/tree/master/spring-webflux
